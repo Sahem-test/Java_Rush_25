@@ -1,0 +1,6 @@
+
+Функция	                Описание	                Пример результата
+str.length()            лина строки	                "abc".length() → 3
+str.toUpperCase()       В верхний регистр	        "abc".toUpperCase() → "ABC"
+str.toLowerCase()       В нижний регистр	        "ABC".toLowerCase() → "abc"
+str.trim()              Удалить пробелы по краям	"  x y  ".trim() → "x y"
