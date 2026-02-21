@@ -1,0 +1,26 @@
+
+1. Функция String.valueOf()
+
+String.valueOf() преобразует число в такую строку, которая соответствует типу переданного в нее объекта.
+    Example:
+int number = 10;
+String str = String.valueOf(number);  // "42"
+
+
+2. Конкатенация с пустой строкой
+int number = 10;
+String str = "" + number;
+
+
+3. Преобразование строки в число
+
+Если строка состоит только из цифр, то ее можно преобразовать в число
+
+int number = Integer.parseInt(строка);
+
+    1.Example:
+String str = "123";
+int number1 = Integer.parseInt(str);        //  number1 содержит число 123;
+
+    2.Example:
+int number3 = Integer.parseInt("321" + 0);  //  number3 содержит число 3210
