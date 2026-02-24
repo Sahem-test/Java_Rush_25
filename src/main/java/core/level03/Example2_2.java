@@ -2,7 +2,7 @@ package main.java.core.level03;
 
 import java.util.Scanner;
 
-public class Example2 {
+public class Example2_2 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
