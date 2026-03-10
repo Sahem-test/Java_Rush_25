@@ -24,7 +24,7 @@ public class Task77 {
         int pyramidHeight = console.nextInt();
         for (int i = 1; i <= pyramidHeight; i++) {
             for (int j = i; j < pyramidHeight; j++) {
-                System.out.print(" ");
+                System.out.print(".");
             }
             for (int k = 1; k <= (2 * i - 1); k++) {
                 System.out.print("*");
