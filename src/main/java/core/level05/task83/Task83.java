@@ -27,7 +27,7 @@ public class Task83 {
             // Игрок указывает силу удара
             System.out.print("Сила удара (1-10): ");
             int hit = console.nextInt();
-            if (hit > 10 || hit < 0) {
+            if (hit > 10 || hit < 1) {
                 continue;
             } else {
                 dragonHp -= hit;
