@@ -1,0 +1,37 @@
+    Чтобы сравнить вещественные числа
+Смотри Example3_1
+
+    Специальные значения double: Infinity, NaN, -Infinity
+
+Что будет, если поделить 1 на 0?
+
+double result = 1.0 / 0.0;
+System.out.println(result); // Infinity
+Результат становится специальным значением "положительная бесконечность".
+
+Если поделить отрицательное число на 0, то вы получите отрицательную бесконечность:
+double result = -1.0 / 0.0;
+System.out.println(result); // -Infinity
+
+Если  попытаться вычислить корень из отрицательного числа:
+double result = Math.sqrt(-1);
+System.out.println(result); // NaN
+
+Или результат деления 0.0 / 0.0:
+double result = 0.0 / 0.0;
+System.out.println(result); // NaN
+NaN — это "всё, что не являлось бы числом в реальной жизни".
+
+    Проверка на специальные значения
+
+В Java есть функции для проверки специальных значений:
+System.out.println(Double.isInfinite(result));    // true, если бесконечность
+System.out.println(Double.isNaN(result));         // true, если NaN
+
+
+Таблица: Как double реагирует на необычные операции
+Операция	    Результат	Что хранится в double
+1.0 / 0.0       Infinity	        +∞
+-1.0 / 0.0      Infinity	        -∞
+0.0 / 0.0        NaN	            Не число
+Math.sqrt(-1)    NaN	            Не число
