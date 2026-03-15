@@ -1,0 +1,9 @@
+
+double temp = 23.56789;
+System.out.println(temp); // 23.56789
+
+// 2 знака после запятой
+System.out.println(String.format("%.2f", temp)); // 23.57
+
+// 1 знак после запятой
+System.out.println(String.format("%.1f%n", temp)); // 23.6
