@@ -1,0 +1,46 @@
+    Есть два основных способа преобразования типов: неявное (автоматическое) и явное (ручное).
+Неявное приведение — это когда Java сама, "без вашего участия", преобразует значение из одного типа в другой, если это безопасно и не приводит к потере данных.
+Это происходит, когда вы присваиваете значение меньшего типа переменной большего типа. Например, из int в double, из char в int, из float в double.
+
+    Пример: int → double
+int apples = 5;
+double applesWeight = apples; // int автоматически становится double
+System.out.println(applesWeight); // 5.0
+
+    Пример: char → int
+char letter = 'A';
+int code = letter; // 'A' превращается в 65 (код символа в Unicode)
+System.out.println(code); // 65
+
+    Таблица неявных преобразований
+    Откуда	                        Куда можно неявно
+    byte                         short, int, long, float, double
+    short                        int, long, float, double
+    char                         int, long, float, double
+    int                          long, float, double
+    long                         float, double
+    float                        double
+
+    Важно: Неявное преобразование работает только в сторону «расширения» (от меньшего к большему).
+        Синтаксис
+  тип_назначения переменная = (тип_назначения) выражение;
+
+    Пример: double → int
+double price = 12.99;
+int roundedPrice = (int) price; // дробная часть просто отбрасывается!
+System.out.println(roundedPrice); // 12
+
+    Пример: int → char
+int code = 66;
+char letter = (char) code; // 66 — это символ 'B'
+System.out.println(letter); // B
+
+    Преобразование между числами и строками
+    int → String
+int x = 123;
+String s = Integer.toString(x);
+// или просто: String s = "" + x;
+
+    String → int
+String s = "456";
+int x = Integer.parseInt(s);
