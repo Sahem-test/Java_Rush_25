@@ -18,6 +18,7 @@ package main.java.core.level08.task136;
  */
 public class Task136 {
     public static void main(String[] args) {
+
         MessageAmplifier.amplifyAndDisplay("Ура!", 4);
     }
 }
