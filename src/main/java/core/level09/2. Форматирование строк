@@ -1,0 +1,31 @@
+            String.format
+Метод String.format() позволяет создавать строку по шаблону и подставлять значения в заданные позиции.
+String result = String.format("Шаблон", значения);
+%s — строка
+%d — целое число
+%f — число с плавающей точкой
+%n — перенос строки (кроссплатформенно)
+
+            Ширина поля и выравнивание:
+int n = 7;
+System.out.println(String.format("Число: [%5d]", n));   // Число: [    7]
+System.out.println(String.format("Число: [%-5d]", n));  // Число: [7    ]
+[5d] — ширина поля 5, выравнивание по правому краю по умолчанию;
+[-5d] — ширина поля 5, выравнивание влево.
+
+            Проценты
+double percent = 0.125;
+System.out.println(String.format("Готово: %.1f%%", percent * 100)); // Готово: 12.5%
+Чтобы вывести символ процента, используйте %%
+
+            Форматирование дат (кратко)
+import java.util.Date;
+Date now = new Date();
+System.out.println(String.format("Сегодня: %tD", now)); // Сегодня: 06/18/24
+System.out.println(String.format("Время: %tT", now));   // Время: 15:42:07
+
+            Локализация и разделители
+По умолчанию используется локаль системы. Чтобы задать свою (например, запятая как разделитель дробной части), передайте локаль — например, Locale.FRANCE.
+import java.util.Locale;
+double price = 1234.56;
+System.out.println(String.format(Locale.FRANCE, "%.2f", price)); // 1234,56
